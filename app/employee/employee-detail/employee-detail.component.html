@@ -1,0 +1,7 @@
+<div class="disp"  *ngIf="this.currentEmployee != undefined" >
+    <p style="font-weight: 800">{{'ID: ' + this.currentEmployee.id}}</p>
+    <p>{{'Name: ' + this.currentEmployee.name}}</p>
+    <p>{{'Gender: ' + this.currentEmployee.gender ? 'Male' : 'Female'}}</p>
+    <p>{{'Role: ' + this.currentEmployee.role}}</p>
+
+</div>

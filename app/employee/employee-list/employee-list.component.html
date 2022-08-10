@@ -1,0 +1,5 @@
+<h2 style="display:flex; justify-content:center; font-family: Arial, Helvetica, sans-serif;">List of Employees</h2>
+
+<div class="list-group" *ngFor="let employee of employeeList" style="display:flex; justify-content:center; align-items:center;">
+<p style="cursor:pointer; font-size: large; font-family: Arial, Helvetica, sans-serif;" (click)="onEmployeeClick(employee)">{{employee.name}}</p>
+</div>
