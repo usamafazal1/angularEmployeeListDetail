@@ -1,0 +1,2 @@
+<app-employee-list (clickedEmployee)="setSelectedEmployee($event)" [showList]="this.list"></app-employee-list>
+<app-employee-detail [currentEmployee]="this.selectedEmployee" (nextEvent)="setNext($event)" (prevEvent)="setPrev($event)" (firstEvent)="firstEve($event)" (delEvent)="delEve($event)"></app-employee-detail>

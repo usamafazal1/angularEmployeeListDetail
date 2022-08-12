@@ -1,0 +1,20 @@
+<div class="container">
+    <ul *ngIf="this.currentEmployee != undefined" class="list-group">
+        <h4>Details</h4>
+        <li class="list-group-item list-group-item-dark">{{'ID: ' + this.currentEmployee.id}}</li>
+        <li class="list-group-item list-group-item-success">{{'Name: ' + this.currentEmployee.name}}</li>
+        <li class="list-group-item list-group-item-success">{{'Gender: ' + this.currentEmployee.gender ? 'Male' : 'Female'}}</li>
+        <li class="list-group-item list-group-item-success">{{'Role: ' + this.currentEmployee.role}}</li>
+
+        <div class="button">
+            <br>
+            <button class="btn btn-secondary" type="button" (click)="prevFunc(currentEmployee)">Previous</button>&nbsp;
+            <button class="btn btn-primary" type="button" (click)="nextFunc(currentEmployee)">Next</button>&nbsp;
+            <button class="btn btn-danger" type="button" (click)="firstFunc(currentEmployee)">First</button> &nbsp;
+            <button class="btn btn-danger" type="button" (click)="delFunc(currentEmployee)">Delete</button>
+
+        </div>
+
+    </ul>
+
+</div>
